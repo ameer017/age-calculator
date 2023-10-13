@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,22 +17,64 @@
 </head>
 <body>
 
-  Day
-  DD
+  <section class="container">
 
-  Month
-  MM
+    <div class="input__boxes">
+      <div>
+        <p class="title">DAY</p>
+        <input type="text" name="day" id="dayInput" placeholder="DD" class="day">
+        <div >
+          <small class="error__empty"></small>
+        </div>
+      </div>
 
-  Year
-  YYYY
+      <div>
+        <p class="title_one">MONTH</p>
+        <input type="text" name="month" id="monthInput" placeholder="MM">
+        <div>
+          <small class="error__empty__three"></small>
+        </div>
+      </div>
 
-  -- years
-  -- months
-  -- days
+      <div>
+        <p class="title_two">YEAR</p>
+        <input type="text" name="year" id="yearInput" placeholder="YYYY">
+        <div>
+          <small class="error__empty__two"></small>
+        </div>
+      </div>
+    </div>
+
+    <div class="section__two">
+      <span></span>
+      <div class="image__wrapper">
+        <img src="/assets/images/icon-arrow.svg" alt="">
+      </div>
+    </div>
+
+    <div class="section__three">
+      <div class="years">
+        <h1>
+         <spin class="one" id="yearsSpan">--</spin> years
+        </h1>
+      </div>
+      <div class="months">
+        <h1>
+         <spin class="one" id="monthsSpan">--</spin> months
+        </h1>
+      </div>
+      <div class="days">
+        <h1>
+         <spin class="one" id="daysSpan">--</spin> days
+        </h1>
+      </div>
+    </div>
+  </section>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://ameerportfoliosite.netlify.app">Raji Abdullahi A</a>.
   </div>
+  <script src="age.js"></script>
 </body>
 </html>
